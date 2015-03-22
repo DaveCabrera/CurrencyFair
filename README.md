@@ -19,4 +19,4 @@ For the front end, I wrote a basic iOS application written in Swift. The applica
 
 ![alt text](https://raw.githubusercontent.com/DaveCabrera/CurrencyFair/master/screen.png "Screen")
 
-The iOS app has to be run in the simulator for it to work since I didn't have a server on the web to test on. Everything was done locally.
+The iOS app has to be run in the simulator for it to work since I didn't have a server on the web to test on. Everything was done locally. The app was built using Xcode 6.2 with the target platform being iOS 8.2.
