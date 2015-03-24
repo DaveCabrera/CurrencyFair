@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     private func retrieveTransactionMessagesFromServer() {
         // Create your own manager instance that uses your custom configuration
         let credentials = NSURLCredential(user: "foo", password: "bar", persistence: .ForSession)
-        Alamofire.request(.GET, "http://localhost:3000/list/")
+        Alamofire.request(.GET, URLString: "http://localhost:3000/list/")
             .authenticate(usingCredential: credentials)
             .responseJSON({(request, response, data, error) -> Void in
                 var jsonArray = data as Array<AnyObject>
